@@ -8,7 +8,7 @@ class ListOfDoctors extends Component {
     constructor(props){
         super(props);
     }
-
+// Render function to display the list of doctors
     renderDataOnScreen = (data) => {
         return data.map( data => (
 
@@ -28,17 +28,19 @@ class ListOfDoctors extends Component {
     render() {
         return (
             <div className="App">
+                {/*Header Bar*/}
                 <header className="col-lg-3">
 
                     <h1 className="my-4"><img src={doc} className="image-header"/>Doctor List App
+                        <a href="/listdoctors" className="list-group-item">List of Doctors</a>
                         <a href="/" className="list-group-item">Home</a>
                         <a href="/about"  className="list-group-item">Problem definition</a>
-                        <a href="/listdoctors" className="list-group-item">List of Doctors</a>
+
 
                     </h1>
                 </header>
 
-                <h1 className="App-head"> List of Doctors. Click their name to get complete information of the Doctors. </h1>
+                <h1 className="App-head" style={{textAlign:"center"}}> List of Doctors. Click their name to get complete information of the Doctors. </h1>
 
                 <table>
 
@@ -49,7 +51,7 @@ class ListOfDoctors extends Component {
 
                     </tr>
                     </thead>
-
+{/*List of Doctors Render*/}
                     <tbody>
                     {this.renderDataOnScreen(listDoctor())}
                     </tbody>

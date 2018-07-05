@@ -8,9 +8,10 @@ const About = () => (
         <header className="col-lg-3">
 
             <h1 className="my-4"><img src={doc} className="image-header"/>Doctor List App
+                <a href="/listdoctors" className="list-group-item">List of Doctors</a>
                 <a href="/" className="list-group-item">Home</a>
                 <a href="/about"  className="list-group-item">Problem definition</a>
-                <a href="/listdoctors" className="list-group-item">List of Doctors</a>
+
 
             </h1>
         </header>
