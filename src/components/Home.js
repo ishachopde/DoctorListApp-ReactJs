@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/styles.css';
 import doc from '../styles/doc.jpg';
+import hosp from '../styles/hospital.jpg';
 const Home = () => (
 
     <div className="App">
@@ -16,15 +17,14 @@ const Home = () => (
 
                 </h1>
             </header>
+        <div className="container">
+        <img src={hosp} className="img-hosp"/>
+        <div className="middle">
+            <div className="text">DoctorList App gives you a list of Doctors followed with similar doctors in prioritized order</div><br/>
+            <div className="text">Explore the tabs in the header for more features</div>
 
-            <p className="info-para"> Write a	simple	web	application which allows you to	<b>view a	list	of	doctors</b>.</p>
-            <p className="info-para">Users	can	browse	for
-            doctors	given	a	specific	specialty,	area,	review	score	etc.	</p>
-            <p className="info-para">When	a	doctor	is	selected,	display their	details,	along	with a	list	of	similar doctors, in	a
-                prioritized	order.	</p>
-
-            <p className="note-para"> <a href="/about"  className="notes-para">Problem Definition:</a>It has information about the assumptions done and features implemented as stated in the test.</p>
-            <p className="notes-para"><a href="/listdoctors" className="notes-para">List of Doctors:</a> It has the list of doctors which is the first requirement of the problem definition</p>
+        </div>
+        </div>
 
 
     </div>

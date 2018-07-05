@@ -52,5 +52,14 @@ tr:nth-child(odd) {
 
 .info-para{
   font-size: 1.5em;
-  text-align: center;
+  text-align: justify;
+  padding: 5px;
+}
+
+.img-left{
+  float: left;
+}
+
+.img-right{
+  float: right;
 }

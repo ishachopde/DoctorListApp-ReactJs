@@ -126,7 +126,7 @@
          gender: "Female",
          name: "Dr. Theresa Morgan",
          email: "leexumorgan@example.com",
-         speciality: "Opthalmologist"
+         speciality: "Ophthalmologist"
 
      },
 ];

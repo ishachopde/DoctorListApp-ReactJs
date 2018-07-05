@@ -38,7 +38,7 @@ class ListOfDoctors extends Component {
                     </h1>
                 </header>
 
-                <h1 className="App-head"> List of Doctors. Click the speciality to get complete information of the Doctors. </h1>
+                <h1 className="App-head"> List of Doctors. Click their name to get complete information of the Doctors. </h1>
 
                 <table>
 
