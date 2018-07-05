@@ -1,21 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import './styles/App.css';
+import DoctorsList from './components/ListOfDoctors';
+import Info from './components/DoctorInfo';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+import Home from './components/Home';
+import About from './components/About';
 
-export default App;
+const BasicExample = () => (
+    <Router>
+        <div className="list-group">
+            {/*<header >*/}
+                    {/*<Link to="/" >Home</Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/}
+
+                    {/*<Link to="/about">About</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/}
+
+                {/*<Link to="/listdoctors">List of Doctors</Link>*/}
+
+            {/*</header>*/}
+
+            <hr />
+
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/listdoctors" component={DoctorsList} />
+            <Route path="/info/:id" component={Info}/>
+        </div>
+    </Router>
+);
+
+export default BasicExample;
