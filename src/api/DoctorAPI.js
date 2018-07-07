@@ -1,4 +1,4 @@
- const doctors =  [
+ let doctors =  [
     {
         id: "1",
         gender: 'male',
@@ -140,6 +140,18 @@ export const listDoctor = () => {
 
 export const getDoctorInfo = (id) => {
    return doctors.find((doctor) => doctor.id === id);
+}
+
+export const deleteDoctor = id => {
+    doctors = doctors.filter(doctor => {
+        if(doctor.id === id)
+        {
+            console.log('MATCH: ' + doctor.id);
+
+           return null;
+        }
+        return doctor;
+    });
 }
 
 
